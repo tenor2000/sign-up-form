@@ -1,0 +1,146 @@
+@font-face {
+    font-family: norse;
+    src: url(/fonts/Norse-Bold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: fantasy;
+  }
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh
+}
+
+form {
+    font: 1em sans-serif;
+}
+
+img.logo {
+    width: max(64px, 25%);
+    height: max(64px, 25%);
+}
+
+fieldset {
+    display: flex;
+    font-family: fantasy;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color:#DED8C4;
+    border: none;
+    box-shadow: 5px 3px 3px #9D9994;
+    list-style: none;
+    padding: 8px;
+    margin: 0;
+}
+
+
+label {
+
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+button {
+    border-radius: 5px;
+    color:#DED8C4;
+    background-color: #6E380E;
+    padding: 8px;
+    cursor: pointer;
+}
+
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  flex: 1;
+  align-content: space-between;
+  max-width: 33%;
+  overflow: hidden;
+  color: white;
+  background-color: black;
+  background-image: url("images/timo-volz-mrTydVjg04o-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.form-column {
+    display: flex;
+}
+
+.form-row {
+    display: flex;
+    padding: 8px;
+}
+
+.form-row input {
+    background-color: #FFFFFF;
+    width: 200px;
+    height: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: clamp(0.5vw, 16px, 2vw);
+    border: 1px inset #3A2313;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px #9D9994;
+    font-family: fantasy;
+    border-radius: 5px;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    padding-right: 32px;
+}
+
+input:hover {
+    border: 1px solid blue;
+}
+
+button:hover {
+    background-color: #BA8A55;
+}
+
+#logo_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'norse';
+    font-size: 64px;
+    position: relative;
+    top: 40vh;
+    width: 100%;
+    background-color: black;
+    opacity: .4;
+}
+
+#content {
+    flex: 2;
+    background-color: #C9B3A5;
+}
+
+#intro {
+    color: black;
+    height: 25%;
+    padding-left: 10%;
+    padding-bottom: 12%;
+    font-size: 18px;
+}
+
+.credit {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}

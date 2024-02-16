@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <script src="signup-script.js"></script>
+    <link rel="stylesheet" href="signup-style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div id="logo_area">
+                <img class="logo" src="/images/odin-lined.png" alt="The Odin Project Logo">
+                <p>ODIN CAT</p>
+            </div>
+            <p class="credit">Photo by <a href="https://unsplash.com/@magict1911">Timo Volz</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+        </div>
+        <div id="content">
+            <div id="intro">
+                <h1>Welcome to Odin Cat</h1>
+                <p>We provide hourly service of Cat and Kitten facts sent directly to you by phone, text and email.</p>
+                <p>Sign up now and we can have Cat facts, Cat pictures, and Cat clips sent to you immediately!</p>
+                <p>We also have Cat's on the phone with you live!</p>
+
+            </div>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <p id="description">You know you want to!</p>
+                    <div class="form-column">
+                        <div class="form-row">
+                            <li>
+                                <label for="firstname">First Name<span aria-label="required"></span></label>
+                                <input type="text" id="firstname" name="user-firstname" required>
+                            </li>
+                            <li>
+                                <label for="lastname">Last Name<span aria-label="required"></span></label>
+                                <input type="text" id="lastname" name="user-lastname" required>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="form-column">
+                        <div class="form-row">
+                            <li>
+                                <label for="email">Email<span aria-label="required"></span></label>
+                                <input type="email" id="email" name="user-email" required>
+                            </li>
+                            <li>
+                                <label for="phone">Phone Number<span aria-label="required"></span></label>
+                                <input type="tel" id="phone" name="user-phone" required>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="form-column">
+                        <div class="form-row">
+                            <li>
+                                <label for="password">Password<span aria-label="required"></span></label>
+                                <input type="password" id="password" name="user-pw" required>
+                            </li>
+                            <li>
+                                <label for="confirmpassword">Confirm Password<span aria-label="required"></span></label>
+                                <input type="password" id="confirmpassword" name="confirm-pw" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase, and one lowercase letter, and at least 8 or more characters">
+                            </li>
+                        </div>
+                    </div>
+                </fieldset>
+                <ul>
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a>!</p>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
