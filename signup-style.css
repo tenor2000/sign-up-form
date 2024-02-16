@@ -28,7 +28,6 @@ img.logo {
 
 fieldset {
     display: flex;
-    font-family: fantasy;
     justify-content: space-evenly;
     flex-direction: column;
     background-color:#DED8C4;
@@ -41,7 +40,6 @@ fieldset {
 
 
 label {
-
     display: inline-block;
     width: 150px;
     text-align: left;
@@ -54,7 +52,6 @@ button {
     padding: 8px;
     cursor: pointer;
 }
-
 
 .container {
   display: flex;
@@ -131,9 +128,9 @@ button:hover {
 
 #intro {
     color: black;
-    height: 25%;
     padding-left: 10%;
-    padding-bottom: 12%;
+    padding-right: 10%;
+    padding-bottom: 5%;
     font-size: 18px;
 }
 
