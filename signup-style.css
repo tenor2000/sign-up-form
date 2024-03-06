@@ -104,6 +104,14 @@ input:hover {
     border: 1px solid blue;
 }
 
+input:valid {
+    border: 3px solid green;
+}
+
+input:invalid {
+    border: 3px solid red;
+}
+
 button:hover {
     background-color: #BA8A55;
 }

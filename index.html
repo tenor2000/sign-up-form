@@ -53,7 +53,7 @@
                             </li>
                             <li>
                                 <label for="phone">Phone Number<span aria-label="required"></span></label>
-                                <input type="tel" id="phone" name="user-phone" required>
+                                <input type="tel" id="phone" name="user-phone" pattern="[0-9]{10}" title="Must be 10 digits. No ' ', '()' or '-'." required>
                             </li>
                         </div>
                     </div>
@@ -64,8 +64,8 @@
                                 <input type="text" id="country" name="user-country" required>
                             </li>
                             <li>
-                                <label for="phone">Phone Number<span aria-label="required"></span></label>
-                                <input type="tel" id="phone" name="user-phone" pattern="[0-9]{10}" title="Must be 10 digits. No ' ', '()' or '-'." required>
+                                <label for="zip-code">Zip Code<span aria-label="required"></span></label>
+                                <input type="text" id="zip-code" name="user-zip" pattern="[0-9]{5}" title="Must be 5 digits." required>
                             </li>
                         </div>
                     </div>
