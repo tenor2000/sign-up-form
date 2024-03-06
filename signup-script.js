@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Example for checking if a field is left blank
     passwordInput.addEventListener('blur', () => {
         if (!passwordInput.checkValidity()) {
             passwordInput.reportValidity();
@@ -26,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     confirmPasswordInput.addEventListener('blur', () => {
-        if (confirmPasswordInput !== passwordInput) {
-            confirmPasswordInput.reportValidity();
+        if (!passwordInput.checkValidity()) {
+            passwordInput.reportValidity();
         }
     });
 
