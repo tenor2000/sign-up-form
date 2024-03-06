@@ -28,9 +28,9 @@
                 <h2>Live Calls with Our Feline Experts!</h2>
                 <p>And guess what? The excitement doesn't stop there! For a truly purr-tastic experience, we offer live calls with our resident feline experts – get ready to chat with Cats themselves and unleash your inner cat whisperer!</p>
                 
-                <p>Don't miss out on the purr-fect opportunity to indulge in all things Cat at The Catfish Grill – sign up now and let the Cat-venture begin!</p>
+                <p>Don't miss out on the purr-fect opportunity to indulge in all things Cat at Odin Cat – sign up now and let the Cat-venture begin!</p>
             </div>
-            <form action="https://httpbin.org/post" method="post">
+            <form id="signup-form" action="https://httpbin.org/post" method="post">
                 <fieldset>
                     <p id="description">You know you want to!</p>
                     <div class="form-column">
@@ -60,12 +60,24 @@
                     <div class="form-column">
                         <div class="form-row">
                             <li>
+                                <label for="country">Country<span aria-label="required"></span></label>
+                                <input type="text" id="country" name="user-country" required>
+                            </li>
+                            <li>
+                                <label for="phone">Phone Number<span aria-label="required"></span></label>
+                                <input type="tel" id="phone" name="user-phone" pattern="[0-9]{10}" title="Must be 10 digits. No ' ', '()' or '-'." required>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="form-column">
+                        <div class="form-row">
+                            <li>
                                 <label for="password">Password<span aria-label="required"></span></label>
-                                <input type="password" id="password" name="user-pw" required>
+                                <input type="password" id="password" name="user-pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase, and one lowercase letter, and at least 8 or more characters" required>
                             </li>
                             <li>
                                 <label for="confirmpassword">Confirm Password<span aria-label="required"></span></label>
-                                <input type="password" id="confirmpassword" name="confirm-pw" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one uppercase, and one lowercase letter, and at least 8 or more characters">
+                                <input type="password" id="confirmpassword" name="confirm-pw" required>
                             </li>
                         </div>
                     </div>
